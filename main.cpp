@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-// #define int long long
+
 void clearScreen()
 {
     cout << "\033[2J\033[1;1H";

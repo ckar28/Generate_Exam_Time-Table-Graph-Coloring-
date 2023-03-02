@@ -141,7 +141,6 @@ map<int, vector<string>> schedule(map<string, vector<string>> &adj, map<string, 
     map<int, vector<string>> hash;
     for (auto ele : adj)
     {
-        // cout << "Vertex  " << ele.first << " ---> Color " << color[ele.first] << endl;
         hash[color[ele.first]].push_back(ele.first);
     }
 
@@ -151,7 +150,6 @@ map<int, vector<string>> schedule(map<string, vector<string>> &adj, map<string, 
         mx = max(mx, ele.second);
     }
 
-    // cout << "\nNumber of colors required: " << mx << endl;
 
     max_days = mx;
 
